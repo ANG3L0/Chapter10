@@ -11,7 +11,7 @@ Consider the following:
         int value;
         Node* left;
         Node* right;
-    };
+        };
     Node* root;
     public: /* junk here*/
     };
