@@ -5,15 +5,15 @@ Didn't implement set class and instead did a wrapper instead.
 Reason being didn't wanna deal with memory leaks.
 
 Consider the following:
-	class Set{
-		struct Node{
-		int value;
-		Node* left;
-		Node* right;
-	};
-	Node* root;
-	public: /* junk here*/
-	}
+    class Set{
+        struct Node{
+        int value;
+        Node* left;
+        Node* right;
+    };
+    Node* root;
+    public: /* junk here*/
+    };
 
 If I had a method insert(Node), in the method I'd have to
 dynamically allocate nodes (it is a tree, it can't be helped).
